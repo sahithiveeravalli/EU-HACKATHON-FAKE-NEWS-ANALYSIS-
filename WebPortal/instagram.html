@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image:url("heading.jpg");
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #c9c6c1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.btn-group .button {
+  background-color: #91cfc6; 
+  border: 1px black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  border-collapse: seperate;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Fake News Analyser</h1>
+  <p>Platform for detecting fake news with 90% accuracy!!</p>
+</div>
+
+<div class="navbar">
+  <a href="#">ABOUT US</a>
+  <a href="#">QUERIES</a>
+  <a href="#">AUTHORITIES</a>
+  <a href="#" class="right">LOGIN</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Instagram:</h2>
+    <h5>Photo</h5>
+    
+    <img src="instagramlogo.png" style="height:100px;" "width:1000px;">
+    <p>Instagram is a popular social networking platform for sharing photos and videos.Instagram provides facility to upload, edit and share user’s photos and videos on Instagram.It was        launched on 6th October 2010 by two friends Kevin Systrom and Mike Krieger.Instagram can be operated through computers and also from other devices like Smartphone, tablet, and other        devices.</p>
+    
+  </div>
+  <div class="main">
+<script language="Javascript" >
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+
+</script>
+</head>
+
+<script type="text/javascript">
+
+  function enable()
+  {
+   var x = document.LAYOUTFORM.getElementById("create_button")
+   setTimeout(x.removeAttribute("disabled"),3000);
+  }
+</script>
+<body>
+
+<form onsubmit="download(this['name'].value, this['text'].value)">
+
+   
+
+    <input type="hidden" name="name" value="test.txt">
+
+  <textarea rows=3 cols=50 name="text">backspace and enter your text...</textarea><br>
+  
+  <label for="myfile">Select an Image or Video :</label>
+  <input type="file" id="myfile" name="myfile">
+<br>
+  <input type="submit" value="Verify News"><br><br><br>
+
+<button class="button"><a href="file:///C:/Users/rajes/Desktop/3rd%20hacathon/resultinsta.html">Click For Result</button></a>
+
+
+
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>"For sale: real truth. Free giveaway"</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

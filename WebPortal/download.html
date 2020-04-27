@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+</style>
+<script language="Javascript" >
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+
+
+  
+
+</script>
+</head>
+<body>
+
+<form onsubmit="download(this['name'].value, this['text'].value)">
+
+   
+
+    <input type="hidden" name="name" value="test.txt">
+
+  <textarea rows=3 cols=50 name="text">Enter News Details Here </textarea>
+  
+  <label for="myfile">Select an Image or Video :</label>
+  <input type="file" id="myfile" name="myfile">
+<br>
+  <input type="submit" value="Variefy News">
+</form>
